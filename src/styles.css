@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f7f0ff, #e6f7ff);
+  color: #263238;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+a {
+  transition: 0.3s ease;
+}
+
+main {
+  min-height: 80vh;
+}

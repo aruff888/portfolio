@@ -1,1 +1,42 @@
-<p>projects works!</p>
+<section class="projects-page">
+  <div class="projects-header">
+    <h1>Course Projects</h1>
+    <p>
+      This project demonstrates my ability to design, build, and test a modern web application using Angular,
+      including routing, reactive forms, and component-based architecture.
+    </p>
+  </div>
+
+  <div class="projects-grid">
+    <article class="project-card" *ngFor="let project of projects">
+
+      <!-- IMAGE GALLERY -->
+      <div class="image-gallery">
+        <img 
+          *ngFor="let img of project.images" 
+          [src]="img" 
+          [alt]="project.name + ' screenshot'"
+        >
+      </div>
+
+      <div class="project-content">
+        <p class="course">{{ project.course }}</p>
+        <h2>{{ project.name }}</h2>
+        <p class="description">{{ project.description }}</p>
+
+        <h3>Technologies Used</h3>
+        <div class="tech-list">
+          <span *ngFor="let tech of project.technologies">{{ tech }}</span>
+        </div>
+
+        <h3>What I Learned</h3>
+        <p class="learned">{{ project.learned }}</p>
+
+        <a [href]="project.link" target="_blank" class="project-link">
+          View GitHub Repository →
+        </a>
+      </div>
+
+    </article>
+  </div>
+</section>

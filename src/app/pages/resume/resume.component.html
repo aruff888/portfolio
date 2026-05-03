@@ -1,1 +1,51 @@
-<p>resume works!</p>
+<section class="resume-page">
+  <div class="resume-header">
+    <h1>Resume</h1>
+    <p>
+      View my education, technical skills, development experience, and coursework accomplishments.
+    </p>
+
+    <a class="download-btn" href="/Amanda_Ruff_Resume.pdf" download>
+      Download Resume
+    </a>
+  </div>
+
+  <section class="resume-section">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+      <span *ngFor="let skill of skills" class="skill">
+        {{ skill }}
+      </span>
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <h2>Education</h2>
+
+    <div class="resume-card" *ngFor="let item of education">
+      <h3>{{ item.school }}</h3>
+      <h4>{{ item.program }}</h4>
+      <p>{{ item.details }}</p>
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <h2>Experience</h2>
+
+    <div class="resume-card" *ngFor="let item of experience">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.details }}</p>
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <h2>Certifications & Awards</h2>
+
+    <ul class="cert-list">
+      <li *ngFor="let certification of certifications">
+        {{ certification }}
+      </li>
+    </ul>
+  </section>
+</section>

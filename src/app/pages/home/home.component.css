@@ -1,98 +1,94 @@
-/* HERO SECTION */
 .hero {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: white;
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
+  background: linear-gradient(135deg, #ff7eb3, #65d6ce, #7f7fd5);
+  color: white;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
   margin-bottom: 15px;
 }
 
 .intro {
-  max-width: 600px;
-  margin: 0 auto 20px;
-  font-size: 1.2rem;
-}
-
-/* BUTTONS */
-.cta-buttons {
-  margin-top: 20px;
+  font-size: 1.25rem;
+  line-height: 1.7;
 }
 
 .btn {
   display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  background: #ffffff;
-  color: #1e3c72;
+  margin: 12px;
+  padding: 13px 24px;
+  border-radius: 30px;
+  background: white;
+  color: #6a11cb;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .btn:hover {
-  background: #ddd;
+  transform: translateY(-3px);
 }
 
 .btn.secondary {
-  background: transparent;
-  border: 2px solid #fff;
-  color: white;
+  background: #ffe066;
+  color: #241638;
 }
 
-.btn.secondary:hover {
-  background: white;
-  color: #1e3c72;
-}
-
-/* BUCKET LIST */
-.bucket {
-  padding: 50px 20px;
+.bucket,
+.quick-links {
+  padding: 55px 20px;
   text-align: center;
 }
 
-.bucket ul {
-  list-style: none;
-  padding: 0;
+.bucket h2,
+.quick-links h2 {
+  color: #6a11cb;
+  font-size: 2rem;
 }
 
 .bucket li {
-  background: #f4f4f4;
-  margin: 10px auto;
-  padding: 12px;
-  max-width: 500px;
-  border-radius: 6px;
+  background: white;
+  margin: 12px auto;
+  padding: 14px;
+  max-width: 520px;
+  border-radius: 14px;
+  list-style: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  border-left: 6px solid #ff7eb3;
 }
 
-/* CARDS */
-.quick-links {
-  padding: 50px 20px;
-  text-align: center;
+.bucket ul {
+  padding: 0;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
 }
 
 .card {
+  width: 270px;
   background: white;
-  padding: 20px;
-  width: 250px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  color: #2575fc;
 }
 
 .card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #2a5298;
+  color: #6a11cb;
+  font-weight: 800;
   text-decoration: none;
-  font-weight: bold;
 }

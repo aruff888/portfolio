@@ -1,0 +1,82 @@
+.projects-page {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-header h1 {
+  font-size: 2.7rem;
+  color: #6a11cb;
+}
+
+.projects-header p {
+  max-width: 760px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+  border-top: 8px solid #65d6ce;
+}
+
+.image-gallery {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-gallery img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid #f7f0ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.course {
+  color: #ff4f9a;
+  font-weight: 800;
+}
+
+.project-content h2 {
+  color: #2575fc;
+}
+
+.tech-list span {
+  display: inline-block;
+  background: #f0e7ff;
+  color: #6a11cb;
+  padding: 8px 13px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 18px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 800;
+}
