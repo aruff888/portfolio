@@ -10,18 +10,13 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
   name = 'Amanda Ruff';
-
-  intro = `I am a passionate web development student focused on building modern,
-  responsive applications using Angular, TypeScript, and best practices like
-  Test-Driven Development (TDD).`;
 
   bucketList = [
     'Become a professional full-stack developer',
-    'Build and deploy my own SaaS application',
-    'Contribute to an open-source project',
-    'Travel internationally and work remotely',
-    'Continuously learn new technologies'
+    'Build and deploy a polished web application',
+    'Continue strengthening my Angular and TypeScript skills',
+    'Create projects that solve real-world problems',
+    'Keep learning and growing in the technology field'
   ];
 }

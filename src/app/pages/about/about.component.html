@@ -1,1 +1,31 @@
-<p>about works!</p>
+<section class="about-page">
+
+  <div class="about-hero">
+    <div class="about-image">
+      <img src="/profile.png" alt="Amanda Ruff profile picture">
+    </div>
+
+    <div class="about-text">
+      <p class="tag">Aspiring Full-Stack Developer</p>
+
+      <h1>About Me</h1>
+
+      <h2>{{ name }}</h2>
+
+      <p class="bio">
+        {{ bio }}
+      </p>
+    </div>
+  </div>
+
+  <section class="strengths-section">
+    <h2>Technical Strengths</h2>
+
+    <div class="strengths-grid">
+      <div class="strength-card" *ngFor="let strength of strengths">
+        {{ strength }}
+      </div>
+    </div>
+  </section>
+
+</section>

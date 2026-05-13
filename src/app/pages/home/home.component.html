@@ -1,45 +1,57 @@
-<section class="hero">
-  <div class="hero-content">
-    <h1>Hi, I'm {{ name }}</h1>
-    <p class="intro">{{ intro }}</p>
+<section class="home-hero">
+  <div class="hero-text">
+    <p class="eyebrow">Web Development Student • Future Full-Stack Developer</p>
 
-    <div class="cta-buttons">
-      <a routerLink="/projects" class="btn">View My Work</a>
-      <a routerLink="/resume" class="btn secondary">View Resume</a>
+    <h1>Hi, I’m Amanda Ruff.</h1>
+
+    <p class="hero-description">
+      I build colorful, user-friendly web applications using Angular, TypeScript,
+      responsive design, and problem-solving skills developed through hands-on coursework.
+    </p>
+
+    <div class="hero-buttons">
+      <a routerLink="/projects" class="primary-btn">View My Projects</a>
+      <a routerLink="/resume" class="secondary-btn">View My Resume</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <h2>Portfolio Focus</h2>
+
+    <div class="focus-item">Angular Applications</div>
+    <div class="focus-item">Responsive UI Design</div>
+    <div class="focus-item">REST API Concepts</div>
+    <div class="focus-item">Test-Driven Development</div>
+  </div>
+</section>
+
+<section class="bucket-section">
+  <h2>My Goals & Bucket List</h2>
+
+  <div class="bucket-grid">
+    <div class="bucket-card" *ngFor="let item of bucketList">
+      {{ item }}
     </div>
   </div>
 </section>
 
-<section class="bucket">
-  <h2>My Goals & Bucket List</h2>
-
-  <ul>
-    <li *ngFor="let item of bucketList">
-      {{ item }}
-    </li>
-  </ul>
-</section>
-
-<section class="quick-links">
+<section class="home-links">
   <h2>Explore My Portfolio</h2>
 
-  <div class="cards">
-    <div class="card">
+  <div class="link-grid">
+    <a routerLink="/about" class="link-card">
       <h3>About Me</h3>
-      <p>Learn more about my journey into development.</p>
-      <a routerLink="/about">Go to About →</a>
-    </div>
+      <p>Learn about my background, goals, and journey into web development.</p>
+    </a>
 
-    <div class="card">
+    <a routerLink="/resume" class="link-card">
       <h3>Resume</h3>
-      <p>View my skills, education, and experience.</p>
-      <a routerLink="/resume">View Resume →</a>
-    </div>
+      <p>View my education, technical skills, experience, and resume download.</p>
+    </a>
 
-    <div class="card">
+    <a routerLink="/projects" class="link-card">
       <h3>Projects</h3>
-      <p>Check out the work I've completed.</p>
-      <a routerLink="/projects">See Projects →</a>
-    </div>
+      <p>See my Angular portfolio project and the skills I practiced while building it.</p>
+    </a>
   </div>
 </section>
